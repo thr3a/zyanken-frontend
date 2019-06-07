@@ -1,6 +1,6 @@
 html,body{
 	max-width: 480px;
-	background-color: #f6f6f6;
+	/* background-color: #f6f6f6; */
 	margin: 0 auto;
 	font-family: monospace;
 }
@@ -23,7 +23,8 @@ margin: 20px 0;
 }
 
 .container-image{
-margin: 20px 0;
+	margin-top: 20px;
+/* margin: 20px 0; */
 /* background-color: #555; */
 }
 
@@ -34,10 +35,12 @@ margin: 20px 0;
 .output{
 background-color: #555;
 color: #f6f6f6;
-margin-top: 20px;
-padding: 1em 1em 0 1em;
-border:solid 1px;
-border-radius: 6px;
+/* margin-top: 20px; */
+/* padding: 1em 1em 0 1em; */
+/* border:solid 1px; */
+/* border-radius: 6px; */
+padding: 10px;
+font-size: 30px;
 }
 
 footer{

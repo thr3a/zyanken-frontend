@@ -7,20 +7,20 @@ window.onload = function () {
 let model;
 async function loadModel() {
 	console.log("model loading..");
-	$("#console").html(`<li>model loading...</li>`);
+	$("#console").html('モデル読み込み中');
 	model = await tf.loadLayersModel(`${location.protocol}//${location.host}/models/model.json`);
 	console.log("model loaded.");
-	$("#console").html(`<li>VGG16 pre trained model loaded.</li>`);
+	$("#console").html('モデル読み込み完了');
 	startWebcam();
 	const url = new URL(location.href);
-	const interval = parseInt(url.searchParams.get("i")) || 300;
+	const interval = parseInt(url.searchParams.get("i")) || 200;
 	setInterval(predict, interval);
 };
 
 var video;
 function startWebcam() {
 	console.log("video streaming start.");
-	$("#console").html(`<li>video streaming start.</li>`);
+	$("#console").html('Stating video striming');
 	video = $('#main-stream-video').get(0);
 	vendorUrl = window.URL || window.webkitURL;
 
